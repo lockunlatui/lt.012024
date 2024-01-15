@@ -1,0 +1,89 @@
+.body {
+    background-color: #eee1fa;
+    margin: 0px;
+}
+
+.top-background {
+    width: 100%;
+    max-height: 312px;
+    overflow: hidden;
+}
+
+.main-part {
+    text-align: left;
+    margin: auto;
+    margin-top: -100px;
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 420px;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.head-small {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 17px;
+    display: block;
+    margin-top: 20px;
+}
+
+.content {
+    color: gray;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    display: none;
+}
+
+.toggle-icon {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    position: absolute;
+    margin-top: -26px;
+    left: 416px;
+    padding: 7px;
+    width: 16px;
+    color: #ffffff;
+    border: 1px solid #ad28eb;
+    background-color: #ad28eb;
+    border-radius: 50%;
+}
+
+.toggle-icon:hover {
+    background-color: #eee1fa;
+    color: #301534;
+}
+
+.toggle-icon:active {
+    background-color: #f7b5e9;
+    color: #301534;
+}
+
+#toggle1:checked ~ #content1 {
+    display: block;
+}
+
+#toggle2:checked ~ #content2 {
+    display: block;
+}
+
+#toggle3:checked ~ #content3 {
+    display: block;
+}
+
+#toggle4:checked ~ #content4 {
+    display: block;
+}

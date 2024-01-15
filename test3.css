@@ -1,0 +1,81 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 16px);
+    background-color: antiquewhite;
+}
+
+.main-img {
+    width: 306px;
+    height: 406px;
+    border-radius: 10px 0 0px 10px;
+}
+
+.info {
+    width: 254px;
+    height: 346px;
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 0 10px 10px 0;
+}
+
+.perfume-text {
+    color: gray;
+}
+
+.intro {
+    color: gray;
+}
+
+.sale-price {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(4, 122, 4);
+}
+
+.actual-price {
+    margin-left: 30px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.sale-price, .actual-price {
+    vertical-align: middle;
+}
+
+.price {
+    display: block;
+}
+
+.outside-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+#button {
+    display: block;
+    width: 123px;
+    height: 46px;
+    padding: 15px;
+    background-color: rgb(4, 122, 4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#button:hover {
+    background-color: rgb(5, 161, 5);
+}
+
+.cart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.add {
+    margin-left: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test 3</title>
+        <link rel="stylesheet" href="./test3.css" />
+    </head>
+
+    <body class="body">
+            
+        <!-- start Ảnh nước hoa -->
+            
+        <div class="perfume-img">
+            <img 
+             class="main-img"
+             src="./images/perfume.jpg"
+             alt="Nước hoa">
+        </div>
+
+        <!-- end Ảnh nước hoa -->
+
+        <!-- Start Info -->
+
+        <div class="info">
+            <p class="perfume-text">P E R F U M E</p>
+            <h1 class="heading1">Gabrielle Essence Eau De Parfum</h1>
+            <p class="intro">A floral, solar and voluptuous
+                interpretation composed by Oliver Polge, Perfume-Creator
+                for the HOUSE of CHANEL
+            </p>
+            <br />
+            <div class="price">
+                <span class="sale-price">$149.99</span>
+                <span class="actual-price">$169.99</span>
+            </div>
+            <br />
+            <div class="outside-button">
+                <button id="button" onclick="myfunction()">
+                    <div class="cart">
+                        <img
+                         class="icon-cart"
+                         src="./images/icon-cart.svg"
+                         alt="cart icon"
+                        />
+                        <span class="add">Add to Cart</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <script>
+            function myfunction() {
+                document.getElementById("button").innerHTML = "ADDED!"
+            }
+        </script>
+    </body>
+</html>

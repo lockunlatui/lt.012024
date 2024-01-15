@@ -1,0 +1,78 @@
+.body {
+    background-color: #f4d04e;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 16px);
+}
+
+.card {
+    background-color: #ffffff;
+    text-align: left;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid #111111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 2px 5px #111111;
+    cursor: pointer;
+}
+
+.Thecard:hover {
+    box-shadow: 15px 10px 2px 5px #d3e3fd;
+}
+
+.main-img {
+    border: 2px solid #ffffff;
+    border-radius: 10%;
+    width: 400px;
+}
+
+.chu {
+    margin-left: 10 px;
+}
+
+.Learning {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f4d04e;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heading:link {
+    Color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.heading:visited {
+    color: #111111;
+}
+
+.heading:hover {
+    Color: #3151db;
+    text-decoration: underline;
+}
+
+.tacgia {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tacgia:hover {
+    text-decoration: underline;
+}
+
+.anhphu {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
