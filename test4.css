@@ -1,0 +1,137 @@
+.body {
+    display: block;
+    margin: 0;
+}
+
+.intro, .rating {
+    display: inline-block;
+}
+
+.intro {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    margin-left: 50px;
+}
+
+.heading-1 {
+    width: 300px;
+    color: #511f50;
+}
+
+.intro-detail {
+    color: #744b73;
+    width: 370px;
+}
+
+.rating {
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.first-rating, .second-rating, .third-rating {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f2ddf1;
+    width: 330px;
+    border-radius: 5px;
+}
+
+.second-rating {
+    margin-left: 45px;
+}
+
+.third-rating {
+    margin-left: 90px;
+}
+
+.first-place, .second-place, .third-place {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #511f50;
+}
+
+.checked {
+    color: orange;
+}
+
+.detail-comment-1, .detail-comment-2, .detail-comment-3 {
+    width: 281px;
+    height: 210px;
+    display: inline-block;  
+    margin-left: 70px;
+    background-color: #511f50;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.detail-comment-2 {
+    top: 30px;
+}
+
+.detail-comment-3 {
+    top: 60px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.avatar, .info {
+    display: inline-block;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.person{
+    color: white;
+    font-weight: bold;
+}
+
+.validation {
+    color: #ee86e8;
+}
+
+.review {
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    text-align: justify;
+    width: 250px;
+}
+
+@media screen and (max-width: 375px) {
+    .body {
+        display: block;
+        justify-content: flex-start;
+        align-items: center;
+        margin: auto;
+    }
+
+    .intro-detail {
+        width: 350px;
+    }
+
+    .second-rating, .third-rating {
+        margin-left: 0px;
+    }
+
+    .intro {
+        margin-left: 0;
+    }
+
+    .rating {
+        margin-left: 0;
+    }
+
+    .detail-comment-1, .detail-comment-2, .detail-comment-3{
+        margin-left: 0;
+    }
+}
