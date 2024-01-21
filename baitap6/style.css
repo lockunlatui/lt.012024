@@ -7,7 +7,6 @@
 body {
     font-family: 'Arial', sans-serif;
 }
-
 .container {
     padding: 5%;
     max-width: 1200px;
@@ -62,6 +61,7 @@ body {
     width: 220vh;
     font-size: 28px;
     margin-bottom: 20px;
+    
 }
 
 .main-content .content {
@@ -74,12 +74,15 @@ body {
 .btn input {
     margin-top: 20px;
     letter-spacing: 5px;
-    background-color: orange;
+    background-color: #f15D51;
     padding: 15px 20px;
     font-size: 16px;
     color: white;
     border: none;
     cursor: pointer;
+}
+.btn input:hover {
+    background-color: black;
 }
 
 .aside .content {
@@ -135,4 +138,59 @@ body {
     font-family: sans-serif;
     margin-bottom: 10px;
 }
+
+.aside .content strong:hover,
+li:hover,
+.card .content h3:hover {
+    color: orange; /* Màu cam khi hover */
+    cursor: pointer; /* Đổi con trỏ chuột khi hover */
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+    }
+    .navigation     .content {
+        display: none;
+    }
+    .body-content {
+        flex-direction: column;
+    }
+    .body-content .main {
+        width: 100%;
+        margin-right: 5%;
+    }
+    .body-content .main img {
+        content: url('image-web-3-mobile.jpg');
+
+    }
+    .main .main-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    .main .main-content .content-title {
+        width: 100%;
+    }
+    .main .main-content .content {
+        font-size: 18px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .body-content .aside {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .aside .content {
+        margin: 15px;
+    }
+
+    .foot-content {
+        flex-direction: column;
+    }
+    .foot-content .card .content h1 {
+        font-size: 40px;
+    }
+    
+    }
 
