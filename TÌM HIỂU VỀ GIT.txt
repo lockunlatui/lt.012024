@@ -1,0 +1,27 @@
+
+1. Git là gì?
+Git là một hệ thống quản lý phiên bản (Version Control System - VCS) được thiết kế để theo dõi sự thay đổi trong mã nguồn của dự án phần mềm và giữ cho lịch sử làm việc có thể được quản lý hiệu quả. 
+
+2. Cách sử dụng Git:
+Để sử dụng Git, bạn có thể thực hiện các bước sau:
+
+Tạo một repository: `git init` để khởi tạo một kho lưu trữ mới.
+
+Thêm file : `git add` để đánh dấu sự thay đổi trong các file.
+
+Lưu sự thay đổi: `git commit` để lưu sự thay đổi với một thông điệp mô tả.
+
+Tương tác với các nhánh (branches): Git cho phép bạn làm việc với nhiều nhánh song song, sử dụng `git branch` và `git checkout`.
+
+3. Nơi sử dụng Git:
+Dự án lập trình, quản lý mã nguồn, 
+	
+4. Tại sao sử dụng Git:
+quản lý phiên bản hiệu quả: theo dõi lịch sử, phuc hồi phiên bản trước đố
+
+Làm việc song song: cho phép nhiều người cùng làm việc
+
+Backup và phục hồi dữ liệu dễ dàng trên git
+
+5. Khi nào sử dụng Git:
+Khi làm chung dự án cùng mã nguồn hoặc theo dõi dự án	
