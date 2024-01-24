@@ -1,88 +1,152 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Test 6</title>
+    <link rel="stylesheet" href="./test6.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/test6.js" async></script>
+  </head>
 
-<head>
-  <title>Test 6</title>
-  <link rel="stylesheet" href="./test6.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="/test6.js" async></script>
-</head>
-
-<body class="body">
-  <div class="overall">
-
-    <!-- Start top div -->
-    <div class="top-div">
-      <div class="main-icon">
-        <img class="menu-icon" src="/images/icon-menu.svg" alt="Menu Icon">
-        <img src="./images/logo1.svg" alt="Logo Sneaker" />
-      </div>
-
-      <div class="menu">
-        <span class="detail-menu">Collections</span>
-        <span class="detail-menu">Men</span>
-        <span class="detail-menu">Women</span>
-        <span class="detail-menu">About</span>
-        <span class="detail-menu">Contact</span>
-      </div>
-      <div class="icon-avt">
-        <div class="top-cart">
-          <img src="./images/icon-cart-black.svg" alt="cart icon" />
+  <body class="body">
+    <div class="overall">
+      <!-- Start top div -->
+      <div class="top-div">
+        <div class="main-icon">
+          <img
+            class="menu-icon"
+            src="/images/icon-menu.svg"
+            alt="Menu Icon"
+            onclick="menuOpen()"
+          />
+          <div class="div-column-menu" id="open-close-menu">
+            <img
+              class="menu-close-icon"
+              src="/images/icon-close.svg"
+              alt="Icon Close"
+              onclick="menuClose()"
+            />
+            <ul class="column-menu-detail">
+              <li class="menu-detail">Collections</li>
+              <li class="menu-detail">Men</li>
+              <li class="menu-detail">Women</li>
+              <li class="menu-detail">About</li>
+              <li class="menu-detail">Contact</li>
+            </ul>
+          </div>
+          <img src="./images/logo1.svg" alt="Logo Sneaker" />
         </div>
-        <div class="avt">
-          <img class="avt-detail" src="./images/image-avatar.png" alt="avatar" />
+
+        <div class="menu">
+          <span class="detail-menu">Collections</span>
+          <span class="detail-menu">Men</span>
+          <span class="detail-menu">Women</span>
+          <span class="detail-menu">About</span>
+          <span class="detail-menu">Contact</span>
+        </div>
+        <div class="icon-avt">
+          <div class="top-cart">
+            <img src="./images/icon-cart-black.svg" alt="cart icon" />
+          </div>
+          <div class="avt">
+            <img
+              class="avt-detail"
+              src="./images/image-avatar.png"
+              alt="avatar"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <hr />
-    <!-- Star main part 1 -->
-    <div class="main-part">
-      <div class="product-side">
-        <div class="main-pic">
-          <img class="main-part-img" src="/images/image-product-1.jpg" alt="main-product" />
-          <div class="next-prev-button">
-            <div class="prev-button">
-              <img class="prev-button-img" src="/images/icon-previous.svg" alt="previous button" />
-            </div>
+      <hr />
+      <!-- Star main part 1 -->
+      <div class="main-part">
+        <div class="product-side">
+          <div class="main-pic">
+            <img
+              class="main-part-img"
+              src="/images/image-product-1.jpg"
+              alt="main-product"
+            />
+            <div class="next-prev-button">
+              <div class="prev-button">
+                <img
+                  class="prev-button-img"
+                  src="/images/icon-previous.svg"
+                  alt="previous button"
+                />
+              </div>
 
-            <div class="next-button">
-              <img class="next-button-img" src="/images/icon-next.svg" alt="next button" />
+              <div class="next-button">
+                <img
+                  class="next-button-img"
+                  src="/images/icon-next.svg"
+                  alt="next button"
+                />
+              </div>
             </div>
           </div>
+          <div class="thumbnail">
+            <img
+              class="thumbnail-detail-1"
+              src="/images/image-product-1-thumbnail.jpg"
+              alt="Thumbnail 1"
+            />
+            <img
+              class="thumbnail-detail"
+              src="/images/image-product-2-thumbnail.jpg"
+              alt="Thumbnail 2"
+            />
+            <img
+              class="thumbnail-detail"
+              src="/images/image-product-3-thumbnail.jpg"
+              alt="Thumbnail 3"
+            />
+            <img
+              class="thumbnail-detail"
+              src="/images/image-product-4-thumbnail.jpg"
+              alt="Thumbnail 4"
+            />
+          </div>
+        </div>
 
-        </div>
-        <div class="thumbnail">
-          <img class="thumbnail-detail-1" src="/images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" />
-          <img class="thumbnail-detail" src="/images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" />
-          <img class="thumbnail-detail" src="/images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" />
-          <img class="thumbnail-detail" src="/images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" />
-        </div>
-      </div>
-
-      <!-- Start main part 2 -->
-      <div class="info-side">
-        <p class="sneaker-company"><b>SNEAKER COMPANY</b></p>
-        <h1 class="heading">Fall Limited Edition Sneakers</h1>
-        <p class="detail-info">These low-profile sneakers are your perfect casual wear companion
-          . Featuring a durable rubbel outer sole, they'll withstand everything the weather can offer.
-        </p>
-        <p class="sale-price">$125.00</p>
-        <p class="sale-amount">50%</p>
-        <p class="actual-price">$250.00</p>
-        <div class="set-quantity">
-          <img class="minus-icon" src="/images/icon-minus.svg" alt="minus icon" />
-          <span class="number">0</span>
-          <img class="plus-icon" src="/images/icon-plus.svg" alt="plus icon" />
-        </div>
-        <div class="addcart-button">
-          <button id="addCart" onclick="changeText()">
-            <img class="button-cart" src="/images/icon-cart.svg" alt="cart icon">
-            <span class="button-text">Add to cart</span>
-          </button>
+        <!-- Start main part 2 -->
+        <div class="info-side">
+          <p class="sneaker-company"><b>SNEAKER COMPANY</b></p>
+          <h1 class="heading">Fall Limited Edition Sneakers</h1>
+          <p class="detail-info">
+            These low-profile sneakers are your perfect casual wear companion .
+            Featuring a durable rubbel outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <p class="sale-price">$125.00</p>
+          <p class="sale-amount">50%</p>
+          <p class="actual-price">$250.00</p>
+          <div class="set-quantity">
+            <img
+              class="minus-icon"
+              src="/images/icon-minus.svg"
+              alt="minus icon"
+              onclick="minusNumber()"
+            />
+            <span class="number" id="number-cart">0</span>
+            <img
+              class="plus-icon"
+              src="/images/icon-plus.svg"
+              alt="plus icon"
+              onclick="addNumber()"
+            />
+          </div>
+          <div class="addcart-button">
+            <button id="addCart" onclick="changeText()">
+              <img
+                class="button-cart"
+                src="/images/icon-cart.svg"
+                alt="cart icon"
+              />
+              <span class="button-text">Add to cart</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

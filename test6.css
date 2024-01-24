@@ -30,6 +30,14 @@
     display: none;
 }
 
+.menu-close-icon {
+    display: none;
+}
+
+.div-column-menu {
+    display: none;
+}
+
 .main-icon {
     width: 200px;
 }
@@ -178,12 +186,21 @@
     background-color: #f7f8fd;
 }
 
+.set-quantity:hover {
+    background-color: #bebec1;
+    cursor: pointer;
+}
+
 .minus-icon, .plus-icon, .number {
     vertical-align: middle;
 }
 
 .minus-icon, .number {
     margin-right: 15px;
+}
+
+.minus-icon, .plus-icon {
+    padding: 10px;
 }
 
 .set-quantity, #addCart {
@@ -195,6 +212,7 @@
     padding: 15px;
     border: 0;
     width: 225px;
+    height: 46px;
     margin-left: 40px;
     border-radius: 10px;
 }
@@ -233,6 +251,47 @@
         display: inline-block;
     }
 
+    .div-column-menu {
+        display: none;
+        position: fixed;
+        padding: 20px;
+        width: 170px;
+        height: 100vh;
+        margin-left: -17px;
+        top: 0;
+        background-color: #FDEFE5;
+        z-index: 2;
+        
+    }
+
+    .menu-close-icon {
+        display: flex;
+        position: absolute;
+        left: 78px;;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #f1c6a5;
+    }
+
+    .menu-close-icon:hover {
+        background-color: rgb(245, 146, 146);
+        cursor: pointer;
+    }
+
+    .menu-detail {
+        margin-bottom: -20px;
+        margin-top: 80px;
+        font-weight: bold;
+        color: gray;
+    }
+
+    .menu-detail:hover {
+        color: #ff7d1b;
+        cursor: pointer;
+    }
+
     .main-icon {
         width: fit-content;
     }
@@ -262,6 +321,11 @@
     /*Main part*/
     .next-prev-button {
         display: block;
+    }
+
+    .main-part {
+        display: flex;
+        flex-direction: column;
     }
 
     .product-side, .info-side {
@@ -312,6 +376,7 @@
 
     #addCart {
         margin-left: 0;
+        margin-top: 10px;
     }
 
     .addcart-button {
