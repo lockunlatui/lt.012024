@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    padding: 10px 15%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .content {
+    display: flex;
+  }
+  .content .page ul {
+    display: flex;
+    list-style: none;
+  }
+  .page ul li {
+    margin: 0 20px;
+    color: gray;
+  }
+
+  .account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .account .profile img {
+    width: 35%;
+    margin-left: 40px;
+  }
+  .main {
+    display: flex;
+    padding: 0 5%;
+    margin-top: 80px;
+  }
+  .main .main-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main .main-img img{
+    border-radius: 15px ;
+    width: 65vh;
+    
+  }
+
+  .main .thumb {
+    width: auto;
+    display: flex;
+
+  }
+  
+  .thumb .thumb-img img {
+    border-radius: 15px;  
+    width: 100%;
+
+}
+
+/* Add specific margins to individual thumb-img elements */
+.thumb .thumb-img:first-child {
+margin-right: 20px;
+}
+.thumb .thumb-img:nth-child(2){
+margin-right: 20px;
+}
+.thumb .thumb-img:nth-child(3){
+margin-right: 20px;
+}
+.thumb .thumb-img:nth-child(4){
+margin-right: 0px;
+}
+
+
+.des {
+margin-left: 100px;
+padding: 50px 0;
+}
+.des h3 {
+font-weight: 900;
+color: orange;
+font-size: 13px;
+letter-spacing: 1.2px;
+}
+.des h1 {
+margin-top: 20px;
+letter-spacing: 1.2px;
+font-weight: 750;
+}
+.des p {
+color: gray;
+letter-spacing: 1.2px;
+margin-top: 40px;
+}
+
+.total {
+margin-top: 40px;
+display: flex;
+align-items: center;
+}
+.total .price {
+margin-right:20px ;
+}
+.total .sale {
+background-color: rgba(255, 166, 0, 0.104);
+padding: 8px;
+border-radius: 10px;
+font-weight: 700;
+color: orange;
+}
+
+.acction .btn input {
+font-size: 15px;
+color: white;
+padding: 15px 85px;
+background-color: rgb(255, 111, 0);
+border: none; 
+border-radius: 10px;
+cursor: pointer;
+}
+.acction .count {
+margin-right: 20px;
+width: 100px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: rgba(128, 128, 128, 0.153);
+padding: 10px; 
+border-radius: 10px;
+}
+
+.acction .count img {
+width: 15px;
+margin: 0 5px;
+cursor: pointer;
+}
+.acction {
+margin-top: 40px;
+display: flex;
+}   
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 431px) {
+
+  .main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .container {
+    padding: 15px 0px;
+  }
+  .page {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    display: block;
+  }
+
+  .main .main-img {
+    margin-bottom: 0px;
+
+  }
+
+  .main .images .main-img img {
+    border-radius: 0px;
+    max-width: 100%; 
+    height: auto;
+}
+  .thumb-img {
+    display: none;
+  }
+  .des {
+    padding: 25px;
+    margin: 0;
+  }
+  .acction {
+    flex-direction: column;
+  }
+  .acction .count,
+  .acction .btn {
+    margin: 0;
+    padding: 15px 15px;
+    width: 350px;
+  }
+  .btn input {
+    width: 350px;
+  }
+  .logo img {
+    margin-left: 30px;
+  }
+  hr {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .menu-icon img {
+    width: 40px; 
+  }
+
+  .logo img {
+    margin-left: 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .nav {
+    padding: 5px 15px ;
+    margin-bottom: 15px;
+  }
+  .account .profile img {
+    margin-left: 20px;
+  }
+  .account {
+    width: 100px;
+  }
+
+}
