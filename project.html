@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Project</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./project.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./project.js" async></script>
+  </head>
+
+  <body class="body">
+    <div class="overall">
+      <!-- Top Div -->
+      <div class="top-div">
+        <div class="menu-logo">
+          <img
+            id="menu-logo-detail"
+            src="./images/icon-menu.svg"
+            alt="Menu Logo"
+            onclick="menuOpenClose()"
+          />
+        </div>
+        <div class="logo">
+          <img class="main-logo" src="./images/logo1.svg" alt="Logo Image" />
+        </div>
+
+        <div class="menu-categories">
+          <ul class="menu-overall">
+            <li class="menu-detail">Home</li>
+            <li class="menu-detail">Posts</li>
+            <li class="menu-detail">Business</li>
+            <li class="menu-detail">Lifestyle</li>
+            <li class="menu-detail">Technology</li>
+            <li class="menu-detail">Sports</li>
+            <li class="menu-detail">Pages</li>
+            <li class="menu-detail">Shop</li>
+          </ul>
+        </div>
+
+        <div id="menu-open">
+          <ul class="menu-overall-1">
+            <li class="menu-detail-1">Home</li>
+            <li class="menu-detail-1">Posts</li>
+            <li class="menu-detail-1">Business</li>
+            <li class="menu-detail-1">Lifestyle</li>
+            <li class="menu-detail-1">Technology</li>
+            <li class="menu-detail-1">Sports</li>
+            <li class="menu-detail-1">Pages</li>
+            <li class="menu-detail-1">Shop</li>
+          </ul>
+        </div>
+        <div class="icon-search-avt">
+          <div class="search">
+            <label for="search-box">
+              <img
+                class="search-icon"
+                src="./images/search icon.png"
+                alt="Search Icon"
+                onclick="openSearchBox()"
+              />
+            </label>
+            <div id="search-box-button">
+              <input type="search" id="search-box" name="search-box" />
+              <input type="submit" class="submit-button" value="Submit" />
+            </div>
+            <div id="cover"></div>
+          </div>
+
+          <div class="avatar">
+            <img
+              class="avt-detail"
+              src="./images/image-avatar.png"
+              alt="Avatar"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- Main div -->
+      <div class="main-div">
+        <div class="top-news">
+          <img
+            class="img-top-news"
+            src="./images/hopbao.jpg"
+            alt="Top News Image"
+          />
+          <div class="top-news-info">
+            <h1 class="top-news-heading">
+              VFF tiếp tục tin tưởng HLV Troussier
+            </h1>
+            <p class="top-news-detail">
+              Tổng thư ký Dương Nghiệp Khôi khẳng định Liên đoàn Bóng đá Việt
+              Nam không đánh mất niềm tin vào HLV Philippe Troussier, dù thất
+              bại ở Asian Cup 2023. "Muốn vươn lên châu lục bắt buộc phải có
+              tính kiên nhẫn", Tổng thư ký VFF Dương Nghiệp Khôi nói trước
+            </p>
+          </div>
+        </div>
+        <div class="related-news">
+          <h1 class="related-heading">RELATED</h1>
+          <h2 class="side-heading">
+            Luật Đất đai 2024 có thể tác động gì đến thị trường địa ốc?
+          </h2>
+          <p class="side-info">
+            Quy định mới về bảng giá đất hàng năm nhằm sát thị trường sẽ tác
+            động lớn đến việc triển khai dự án, biên lãi của các chủ đầu tư.
+          </p>
+          <hr />
+          <h2 class="side-heading">
+            Lý do Mỹ khó ngăn được Houthi tấn công tàu hàng
+          </h2>
+          <p class="side-info">
+            Bất chấp nhiều đợt không kích, Mỹ không thể ngăn được Houthi tấn
+            công tàu hàng trên Biển Đỏ, do lực lượng này có ưu thế về địa lý,
+            khí tài và chính trị.
+          </p>
+          <hr />
+          <h2 class="side-heading">
+            Quốc lộ nối Gia Lai - Bình Định ùn tắc 10 km
+          </h2>
+          <p class="side-info">
+            Ôtô đầu kéo chở gỗ dăm bị lật ở đèo An Khê trên quốc lộ 19 nối hai
+            tỉnh Gia Lai và Bình Định khiến giao thông ùn tắc kéo dài, sáng
+            27/1.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Div -->
+      <div class="bottom-div">
+        <h1 class="favorite">FAVORITE</h1>
+        <div class="bottom-box-1">
+          <div class="bottom-box-inside">
+            <img
+              class="bottom-img"
+              src="./images/1stGuy.jpg"
+              alt="Singer Image"
+            />
+            <p class="bottom-info">
+              Medvedev đấu Sinner ở chung kết Australia Mở rộng
+            </p>
+          </div>
+        </div>
+
+        <div class="bottom-box">
+          <div class="bottom-box-inside">
+            <img
+              class="bottom-img"
+              src="./images/2ndGuy.jpg"
+              alt="Artist Image"
+            />
+            <p class="bottom-info">
+              Becker: 'Djokovic đã biết chấp nhận thất bại'
+            </p>
+          </div>
+        </div>
+
+        <div class="bottom-box">
+          <div class="bottom-box-inside">
+            <img
+              class="bottom-img"
+              src="./images/Avatar.jpg"
+              alt="Actor Image"
+            />
+            <p class="bottom-info">
+              Guardiola: 'Tôi sẽ ngủ ngon hơn khi Klopp rời Liverpool'
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
