@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test 8</title>
+    <link rel="stylesheet" href="./test8.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./test8.js" async></script>
+  </head>
+
+  <body class="body">
+    <div class="overall">
+      <!-- top div -->
+      <div class="top-div">
+        <div class="top-icon-container">
+          <div class="todo-container">
+            <h1 class="todo">TODO</h1>
+          </div>
+          <div class="icon">
+            <div class="night-container" id="night">
+              <img
+                class="night-icon"
+                src="./images/icon-moon.svg"
+                alt="Moon Icon"
+                onclick="changeNight()"
+              />
+            </div>
+            <div class="light-container" id="light">
+              <img
+                class="sun-icon"
+                src="./images/icon-sun.svg"
+                alt="Sun Icon"
+                onclick="changeLight()"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="search-container" id="search-container">
+          <input type="checkbox" class="li-checkbox" />
+          <input
+            type="text"
+            id="page-search"
+            placeholder="Create a new todo..."
+          />
+        </div>
+      </div>
+
+      <!-- Main div -->
+      <div class="main-div" id="main-div">
+        <ul class="todo-list">
+          <div class="overall-list" id="overall-list">
+            <li class="menu-container" id="checkmark">
+              <input type="checkbox" />
+              <span class="checkmark">Complete online Javascript course</span>
+            </li>
+            <li class="menu-container">
+              <input type="checkbox" />
+              <span class="checkmark">Jog around the park 3x</span>
+            </li>
+            <li class="menu-container">
+              <input type="checkbox" />
+              <span class="checkmark">10 minutes meditation</span>
+            </li>
+            <li class="menu-container">
+              <input type="checkbox" />
+              <span class="checkmark">Read for 1 hour</span>
+            </li>
+            <li class="menu-container">
+              <input type="checkbox" />
+              <span class="checkmark">Pick up groceries</span>
+            </li>
+            <li class="menu-container">
+              <input type="checkbox" />
+              <span class="checkmark"
+                >Complete Todo App on Frontend Mentor</span
+              >
+            </li>
+          </div>
+        </ul>
+        <div class="small-info">
+          <div class="time">
+            <span>5 items left</span>
+          </div>
+          <div class="status">
+            <span class="all">All</span>
+            <span class="active">Active</span>
+            <span class="completed">Completed</span>
+          </div>
+          <div class="clear">
+            <span>Clear Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="status-mobile">
+        <span class="all">All</span>
+        <span class="active">Active</span>
+        <span class="completed">Completed</span>
+      </div>
+    </div>
+  </body>
+</html>
